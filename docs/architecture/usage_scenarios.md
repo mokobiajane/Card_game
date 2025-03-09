@@ -1,4 +1,4 @@
-Usage Scenarios
+USAGE SCENERIOS:
 
  Scenario 1: Game Initialization
 1. The player launches the game executable.

@@ -1,4 +1,4 @@
-General Description
+GENERAL DESCRIPTION:
 
 Card Game is a multi-player, turn-based card game developed in C++ that simulates classic card game mechanics. The game supports both human players and AI opponents. Initially designed for a command-line interface, the project is built with scalability in mind, enabling future extensions such as additional game modes, rule variations, and even graphical user interfaces.
 
