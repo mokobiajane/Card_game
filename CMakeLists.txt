@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 file(GLOB_RECURSE GAME_SOURCES "src/*.cpp")
-file(GLOB_RECURSE GAME_HEADERS "include/CardGme/*.hpp")
+#file(GLOB_RECURSE GAME_HEADERS "include/CardGme/*.hpp")
 
 add_library(CardGameLib${GAME_SOURCES})
 
