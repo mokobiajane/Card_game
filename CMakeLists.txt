@@ -1,7 +1,7 @@
 
-#cmake_minimum_required(VERSION 3.31)
+cmake_minimum_required(VERSION 3.31)
 
-#cmake_policy(SET CMP0048 NEW)
+cmake_policy(SET CMP0048 NEW)
 
 project(CardGame VERSION 1.0 LANGUAGES CXX)
 
