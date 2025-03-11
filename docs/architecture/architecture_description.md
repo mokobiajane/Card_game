@@ -14,7 +14,7 @@ Card Game is a multi-player, turn-based card game developed in C++ that simulate
 
 
 
- ~SYSTEM REQUIREMENT
+ ~SYSTEM REQUIREMENT:
 
  Functional Requirements
 1. Deck Management:

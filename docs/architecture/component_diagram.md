@@ -1,0 +1,11 @@
+Description:
+- Game Engine:  
+  - Manages the overall game loop, processes player actions, and updates game state.
+- User Interface Module:  
+  - Handles input/output via the command-line (with future potential for GUI integration).
+- Game Logic Module:  
+  - Implements core mechanics such as deck shuffling, card dealing, turn management, and rule enforcement.
+- AI Module:  
+  - Provides decision-making algorithms for AI players.
+- Data/Assets Module:  
+  - Manages external resources (e.g., card definitions and images if transitioning to a GUI).
