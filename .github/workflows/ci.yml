@@ -18,8 +18,8 @@ jobs:
 
             - name: Install dependencies
               run: 
-                sudo apt-get update
-                sudo apt-get install -y g++ cmake
+                sudo apt update
+                sudo apt install -y g++ cmake
 
             - name: Configure CMake
               run: cmake -B build -S .-DCMAKE_CXX_STANDARD=17
