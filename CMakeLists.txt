@@ -1,14 +1,19 @@
 
+cmake_minimum_required(VERSION 3.31)
+
+cmake_policy(SET CMP0048 NEW)
 
 project(CardGame VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+#include_directories(include)
+
 file(GLOB_RECURSE GAME_SOURCES "src/*.cpp")
 file(GLOB_RECURSE GAME_HEADERS "include/*.hpp")
 
-add_library(CardGameLib${GAME_SOURCES}${GAME_HEADERS})
+add_library(CardGameLib ${GAME_SOURCES} ${GAME_HEADERS})
 
 target_include_directories(CardGameLib PUBLIC include)
 
