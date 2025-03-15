@@ -25,7 +25,7 @@ jobs:
               run: |
                 cmake -B build -S . -DCMAKE_CXX_STANDARD=17
 
-                
+
             - name: Build
               run: |
                 cmake --build build
@@ -33,3 +33,6 @@ jobs:
             - name: Run tests
               run: |
                 cd build && ctest --verbose
+
+
+
