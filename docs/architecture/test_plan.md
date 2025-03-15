@@ -1,18 +1,28 @@
-Test Plan
+Test Plan:
 
- Testing Approach
-1. Unit Tests:
-   - Test individual classes (e.g., Card, Deck, Player) for correct initialization and behavior.
-   - Verify methods such as shuffle, draw, addCard, and playCard to ensure they function as expected.
-2. Integration Tests:
-   - Simulate full game rounds to verify the interaction between different modules.
-   - Ensure that sequences of actions (e.g., dealing cards, taking turns, checking win conditions) update the game state correctly.
-3. System Tests:
-   - Conduct end-to-end testing by simulating complete game sessions from start-up to game conclusion.
-   - Validate that the game handles various edge cases (e.g., empty deck, invalid moves) gracefully.
-4. Acceptance Tests:
-   - Confirm that the game meets all specified objectives and requirements.
-   - Verify that both human and AI players interact properly with the game engine.
+1. Player Class: Test methods like drawCard(), takeDamage(), and playCard().
+   - Deck Class: Test methods like shuffle() and drawCard().
+   - Card Class: Test methods like playCard(), checking card effects and costs.
+   - Enemy Class: Test methods like attack(), checking enemy behavior and interactions.
+   - Equipment Class: Test methods like equip(), checking equipment effects on players.
+
+2. Integration Tests
+   - Turn Management: Test the sequence of player and enemy turns, ensuring correct drawing and playing of cards.
+   - Battle System: Test combat interactions between players and enemies, verifying correct damage calculation and resolution.
+   - Resource Management: Test the management of health, mana, and experience points for players and enemies.
+
+3. Gameplay Tests
+   - Game Flow: Test the overall gameplay loop, from game start to game end, ensuring smooth transitions and correct state updates.
+   - User Interface: Test the user interface elements, such as displaying cards, health bars, and action buttons.
+   - Special Events: Test the triggering and resolution of special events, such as status effects, quests, and achievements.
+
+4. Performance Tests
+   - Load Testing: Test the game's performance under different loads, ensuring smooth gameplay with multiple players and enemies.
+   - Stress Testing: Test the game's stability under extreme conditions, such as rapid card plays and intense combat scenarios.
+
+5. User Acceptance Tests
+   - Usability: Test the game's usability, ensuring that players can easily understand and navigate the game interface.
+   - Fun Factor: Test the game's enjoyment factor, gathering feedback from players on the overall experience and engagement. 
 
  ~~Tools and Coverage
 - Testing Framework:  

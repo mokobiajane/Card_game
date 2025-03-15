@@ -1,21 +1,22 @@
-USAGE SCENERIOS:
+Usage Scenario:
 
- Scenario 1: Game Initialization
-1. The player launches the game executable.
-2. The game engine initializes a standard deck of cards and shuffles it.
-3. A predetermined number of players (human and/or AI) are created.
-4. The game deals an initial set of cards to each player.
-5. The initial game state is displayed, and the first player is prompted for their action.
+1. Game Start
+   - The game is initialized, and players are prompted to choose their characters and build their decks from available cards.
+   - The initial game board is set up with players and enemies placed in their starting positions.
 
- Scenario 2: Turn-Based Gameplay
-1. The active player is notified that it is their turn.
-2. The player chooses an action (e.g., draw a card, play a card, discard).
-3. The game logic processes the action, updates the player’s hand and deck state, and checks for rule compliance.
-4. The turn advances to the next player.
-5. The cycle continues until a winning condition is met.
+2. Turn Sequence
+   - Each player takes turns drawing a set number of cards from their deck into their hand.
+   - Players use action points to play cards from their hand, such as attacking enemies, casting spells, or using items.
+   - Enemy characters take their turns to attack players or perform actions based on predefined behaviors.
 
- Scenario 3: Game Conclusion
-1. The game continually checks for a win condition (e.g., a player running out of cards or reaching a target score).
-2. Once a win condition is satisfied, the game declares a winner.
-3. Final scores and game statistics are displayed.
-4. Players are offered an option to start a new game or exit.
+3. Combat Resolution
+   - The effects of played cards are resolved in a specific order, calculating damage dealt, healing, and status effects applied.
+   - Players and enemies update their health and other attributes based on the outcomes of combat.
+
+4. End Turn
+   - Players end their turn by discarding excess cards and preparing for the next turn.
+   - Special events or conditions may trigger at the end of the turn, such as status effects expiring or quests being completed.
+
+5. Game End
+   - The game ends when a victory or defeat condition is met, such as all enemies being defeated or a player's health reaching zero.
+   - Players receive rewards or experience points based on their performance, and the game state is saved for future sessions.

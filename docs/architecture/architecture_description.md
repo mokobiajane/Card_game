@@ -1,45 +1,35 @@
-GENERAL DESCRIPTION:
+general description:
 
-Card Game is a multi-player, turn-based card game developed in C++ that simulates classic card game mechanics. The game supports both human players and AI opponents. Initially designed for a command-line interface, the project is built with scalability in mind, enabling future extensions such as additional game modes, rule variations, and even graphical user interfaces.
+This game is a strategic, turn-based card RPG set in a richly designed world where players take on the role of powerful adventurers. The gameplay revolves around building a deck of cards that represent attacks, spells, items, equipment, and special abilities. Each turn, players draw a hand of cards from their deck and strategically play them to outsmart and overcome enemies on the game board.
 
- GAME OBJECTIVE:
-- Engagement: Deliver a strategic and fun gameplay experience through interactive card mechanics.
-- Flexibility: Support multiple players (human and AI) and enable various gameplay modes.
-- Expandability: Provide a robust and modular codebase that can be easily extended with new features, such as advanced AI strategies or network multiplayer.
-- Maintainability: Ensure a clean, well-documented repository structure to facilitate ongoing development and testing.
+The game features:
+1. Core Gameplay Mechanics:
+   - Deck-building: Players customize their deck by collecting and upgrading cards as they progress through the game.
+   - Turn-based Combat: Players and enemies take turns executing actions in a tactical battle environment.
+   - Effect Management: Cards can inflict status effects like burns, freezes, or healing buffs, adding a layer of depth to gameplay.
 
- SCOPE:
-- Initial Focus: Implement core card game features such as deck management, player actions, turn-based gameplay, and rule enforcement.
-- Future Enhancements: Introduce additional game modes, refine AI behavior, develop a graphical user interface, and incorporate networked multiplayer options.
+2. Player Development:
+   - Skills and Leveling: Players level up by earning achievement, unlocking new skills and abilities as they grow stronger.
+   - Quest Completion: Engaging quests provide rewards such as gold, cards, or achievements.
+   - Customization: Players can outfit their characters with powerful equipment and learn specialized skills.
+
+3. Narrative and Exploration:
+   - Embark on epic quests to uncover hidden lore, solve puzzles, and battle legendary foes.
+   
+
+4. Progression and Achievements:
+   - Players unlock achievements based on milestones or special conditions during gameplay.
+   
 
 
+The game integrates strategy, creativity, and storytelling, encouraging players to think critically about their card combinations and turn decisions. By blending RPG mechanics with the strategic depth of card games, it offers a unique and engaging experience for players who enjoy both tactical combat and narrative-driven gameplay.
 
- ~SYSTEM REQUIREMENT:
+---
 
- Functional Requirements
-1. Deck Management:
-   - Initialize a standard deck of cards with defined suits and ranks.
-   - Enable shuffling of the deck and drawing cards.
-2. Player Interaction:
-   - Support multiple players, each with an individual hand.
-   - Allow players to perform actions such as drawing, playing, and discarding cards.
-3. Turn-Based Gameplay:
-   - Enforce a strict turn order, updating game state based on player actions.
-   - Track rounds and determine winning conditions (e.g., a player empties their hand or reaches a target score).
-4. AI Integration:
-   - Implement an AI module that makes decisions based on the current game state.
-   - Allow seamless switching between human and AI players.
-5. Documentation and Testing:
-   - Include inline documentation (Doxygen-style) for all classes and methods.
-   - Develop a suite of unit, integration, and system tests to validate game mechanics.
+SYSTEM REQUIREMENT:
+ Non-Functional Requirements
 
- Non-Functional Requirements
-1. Performance:
-   - The game should run smoothly on standard desktop hardware with minimal memory overhead.
-2. Platform Compatibility:
-   - Must compile and run on Windows, Linux, and macOS using standard C++17 (or later).
-3. Maintainability:
-   - Follow consistent naming conventions and modular design practices to ensure the codebase is clean and easily extensible.
-4. User Interface:
-   - Start with a command-line interface that clearly displays game state and prompts.
-   - Design the architecture to allow for a future transition to a graphical interface without major refactoring.
+    Performance:    - The game should run smoothly on standard desktop hardware with minimal memory overhead.
+    Platform Compatibility:    - Must compile and run on Windows, Linux, and macOS using standard C++17 (or later).
+    Maintainability:    - Follow consistent naming conventions and modular design practices to ensure the codebase is clean and easily extensible.
+    User Interface:    - Start with a command-line interface that clearly displays game state and prompts.    - Design the architecture to allow for a future transition to a graphical interface without major refactoring.
