@@ -1,6 +1,0 @@
-/home/jane/Desktop/Card_game/build/CMakeFiles/CardGameLib.dir
-/home/jane/Desktop/Card_game/build/CMakeFiles/CardGame.dir
-/home/jane/Desktop/Card_game/build/CMakeFiles/runTests.dir
-/home/jane/Desktop/Card_game/build/CMakeFiles/test.dir
-/home/jane/Desktop/Card_game/build/CMakeFiles/edit_cache.dir
-/home/jane/Desktop/Card_game/build/CMakeFiles/rebuild_cache.dir
