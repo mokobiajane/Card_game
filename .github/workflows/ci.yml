@@ -4,7 +4,7 @@ on:
     push:
         branches: 
             - main
-    pull_request:
+    pull_request:      
         branches: 
             - main
 
@@ -19,7 +19,7 @@ jobs:
             - name: Install dependencies
               run: |
                 sudo apt update
-                sudo apt install -y g++ cmake
+                sudo apt install -y g++ cmake libsfml-dev
 
             - name: Configure CMake
               run: |
