@@ -1,0 +1,118 @@
+\doxysection{Game\+Window Class Reference}
+\hypertarget{classGameWindow}{}\label{classGameWindow}\index{GameWindow@{GameWindow}}
+
+
+{\ttfamily \#include $<$Game\+Window.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameWindow_af3df69b9b7ae0a1874ebbb18f57bba26}{Game\+Window}} (int width, int height, const std\+::string \&title)
+\item 
+\mbox{\hyperlink{classGameWindow_a55b071c0390e45c064a160c1e6baaa08}{\texorpdfstring{$\sim$}{\string~}\+Game\+Window}} ()
+\item 
+void \mbox{\hyperlink{classGameWindow_a1904a012066156fdba18adf52f638570}{run}} (\mbox{\hyperlink{classCardGame}{Card\+Game}} \&game)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGameWindow_a7d68131f49a39775808c0d336ee9710c}{process\+Events}} (\mbox{\hyperlink{classCardGame}{Card\+Game}} \&game)
+\item 
+void \mbox{\hyperlink{classGameWindow_a50a2248ee6576b36772ecae80e3c5687}{update}} (\mbox{\hyperlink{classCardGame}{Card\+Game}} \&game)
+\item 
+void \mbox{\hyperlink{classGameWindow_aaae9d5e2ce30752e75e3eced3d97075c}{render}} (\mbox{\hyperlink{classCardGame}{Card\+Game}} \&game)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window \mbox{\hyperlink{classGameWindow_a484ac2b5a9653b255b6ab6637c821cd2}{window}}
+\item 
+sf\+::\+Font \mbox{\hyperlink{classGameWindow_acd693c6343768d7b57e8a5bdd40e629a}{font}}
+\item 
+\mbox{\hyperlink{GameWindow_8h_a1fbb23a4b2427b486453417312008cfb}{Turn\+State}} \mbox{\hyperlink{classGameWindow_a720d86332f03a202ce5f3bfc81b37382}{state}}
+\item 
+sf\+::\+Clock \mbox{\hyperlink{classGameWindow_a3cca59319cc3fdf62b1878da4ff88d26}{turn\+Clock}}
+\item 
+std\+::string \mbox{\hyperlink{classGameWindow_a641133c43f0fa84bdb9f20a450bc6c98}{last\+Action}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classGameWindow_af3df69b9b7ae0a1874ebbb18f57bba26}\label{classGameWindow_af3df69b9b7ae0a1874ebbb18f57bba26} 
+\index{GameWindow@{GameWindow}!GameWindow@{GameWindow}}
+\index{GameWindow@{GameWindow}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{GameWindow()}{GameWindow()}}
+{\footnotesize\ttfamily Game\+Window\+::\+Game\+Window (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{const std\+::string \&}]{title }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameWindow_a55b071c0390e45c064a160c1e6baaa08}\label{classGameWindow_a55b071c0390e45c064a160c1e6baaa08} 
+\index{GameWindow@{GameWindow}!````~GameWindow@{\texorpdfstring{$\sim$}{\string~}GameWindow}}
+\index{````~GameWindow@{\texorpdfstring{$\sim$}{\string~}GameWindow}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}GameWindow()}{\string~GameWindow()}}
+{\footnotesize\ttfamily Game\+Window\+::\texorpdfstring{$\sim$}{\string~}\+Game\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classGameWindow_a7d68131f49a39775808c0d336ee9710c}\label{classGameWindow_a7d68131f49a39775808c0d336ee9710c} 
+\index{GameWindow@{GameWindow}!processEvents@{processEvents}}
+\index{processEvents@{processEvents}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{processEvents()}{processEvents()}}
+{\footnotesize\ttfamily void Game\+Window\+::process\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCardGame}{Card\+Game}} \&}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classGameWindow_aaae9d5e2ce30752e75e3eced3d97075c}\label{classGameWindow_aaae9d5e2ce30752e75e3eced3d97075c} 
+\index{GameWindow@{GameWindow}!render@{render}}
+\index{render@{render}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Game\+Window\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCardGame}{Card\+Game}} \&}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classGameWindow_a1904a012066156fdba18adf52f638570}\label{classGameWindow_a1904a012066156fdba18adf52f638570} 
+\index{GameWindow@{GameWindow}!run@{run}}
+\index{run@{run}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Game\+Window\+::run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCardGame}{Card\+Game}} \&}]{game }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameWindow_a50a2248ee6576b36772ecae80e3c5687}\label{classGameWindow_a50a2248ee6576b36772ecae80e3c5687} 
+\index{GameWindow@{GameWindow}!update@{update}}
+\index{update@{update}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+Window\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCardGame}{Card\+Game}} \&}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classGameWindow_acd693c6343768d7b57e8a5bdd40e629a}\label{classGameWindow_acd693c6343768d7b57e8a5bdd40e629a} 
+\index{GameWindow@{GameWindow}!font@{font}}
+\index{font@{font}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily sf\+::\+Font Game\+Window\+::font\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classGameWindow_a641133c43f0fa84bdb9f20a450bc6c98}\label{classGameWindow_a641133c43f0fa84bdb9f20a450bc6c98} 
+\index{GameWindow@{GameWindow}!lastAction@{lastAction}}
+\index{lastAction@{lastAction}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{lastAction}{lastAction}}
+{\footnotesize\ttfamily std\+::string Game\+Window\+::last\+Action\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classGameWindow_a720d86332f03a202ce5f3bfc81b37382}\label{classGameWindow_a720d86332f03a202ce5f3bfc81b37382} 
+\index{GameWindow@{GameWindow}!state@{state}}
+\index{state@{state}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{GameWindow_8h_a1fbb23a4b2427b486453417312008cfb}{Turn\+State}} Game\+Window\+::state\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classGameWindow_a3cca59319cc3fdf62b1878da4ff88d26}\label{classGameWindow_a3cca59319cc3fdf62b1878da4ff88d26} 
+\index{GameWindow@{GameWindow}!turnClock@{turnClock}}
+\index{turnClock@{turnClock}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{turnClock}{turnClock}}
+{\footnotesize\ttfamily sf\+::\+Clock Game\+Window\+::turn\+Clock\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classGameWindow_a484ac2b5a9653b255b6ab6637c821cd2}\label{classGameWindow_a484ac2b5a9653b255b6ab6637c821cd2} 
+\index{GameWindow@{GameWindow}!window@{window}}
+\index{window@{window}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window Game\+Window\+::window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{GameWindow_8h}{Game\+Window.\+h}}\item 
+src/\mbox{\hyperlink{GameWindow_8cpp}{Game\+Window.\+cpp}}\end{DoxyCompactItemize}

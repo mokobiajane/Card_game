@@ -1,0 +1,47 @@
+\doxysection{enemy.\+h}
+\hypertarget{enemy_8h_source}{}\label{enemy_8h_source}\index{include/enemy.h@{include/enemy.h}}
+\mbox{\hyperlink{enemy_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ ENEMY\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ ENEMY\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{card_8h}{card.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{effect_8h}{effect.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDeck}{Deck}};}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPlayer}{Player}};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEnemy}{Enemy}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{classEnemy}{Enemy}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classEnemy_a62b43d24fa5a537d45bdba46a4e2559b}{name}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classEnemy_aedd5e7bf8ef07ee97be433c853a10d8d}{health}},\ \textcolor{keywordtype}{int}\ attack);}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classEnemy_ac0eec4755e28c02688065f9657150ac3}{\string~Enemy}}();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEnemy_af03b0e6cb01e953a0fbf866ddf6aba03}{startTurn}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEnemy_a76a44c5a2deac432f057cde8a0a82206}{playAITurn}}(\mbox{\hyperlink{classPlayer}{Player}}*\ player);\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEnemy_aa74591033670a0144aedb390fe15a957}{receiveDamage}}(\textcolor{keywordtype}{int}\ damage);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEnemy_ac7a8d025fab67f6c908a87472f0af3a7}{setStunned}}(\textcolor{keywordtype}{int}\ turns);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classEnemy_aa6001291bc8cf8212cf351d21cc69adf}{isStunned}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ std::string\ \mbox{\hyperlink{classEnemy_acc2a72d8a2af5edba5fca650abebd652}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classEnemy_a3473f9f24e815aebb44c85943204d31c}{getHealth}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classDeck}{Deck}}*\ \mbox{\hyperlink{classEnemy_ac7e2f540932be19655b191f36488007a}{deck}};}
+\DoxyCodeLine{00028\ \ \ \ \ std::vector<Card*>\ \mbox{\hyperlink{classEnemy_a279733b2a6725e172638a14817c99681}{hand}};}
+\DoxyCodeLine{00029\ \ \ \ \ std::vector<Card*>\ \mbox{\hyperlink{classEnemy_a02c3d2e5c41864506d7b26d87ee303a6}{discardPile}};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEnemy_ac32ab267863a07883894f603a8c3850e}{updateEffects}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ std::string\ \mbox{\hyperlink{classEnemy_a62b43d24fa5a537d45bdba46a4e2559b}{name}};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classEnemy_aedd5e7bf8ef07ee97be433c853a10d8d}{health}};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classEnemy_a5cad1bc01d7f830a5a76217aa704ecf0}{attackPower}};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classEnemy_a4f2c5c9fc97cb520306f7db140165e34}{stunDuration}};}
+\DoxyCodeLine{00038\ \ \ \ \ std::vector<Effect*>\ \mbox{\hyperlink{classEnemy_a96bd00a0a7b84404d8f6060598f790fc}{activeEffects}};}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

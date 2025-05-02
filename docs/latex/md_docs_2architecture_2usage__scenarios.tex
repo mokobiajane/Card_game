@@ -1,0 +1,33 @@
+\chapter{usage\+\_\+scenarios}
+\hypertarget{md_docs_2architecture_2usage__scenarios}{}\label{md_docs_2architecture_2usage__scenarios}\index{usage\_scenarios@{usage\_scenarios}}
+Usage Scenario\+:
+
+
+\begin{DoxyEnumerate}
+\item Game Start
+\begin{DoxyItemize}
+\item The game is initialized, and players are prompted to choose their characters and build their decks from available cards.
+\item The initial game board is set up with players and enemies placed in their starting positions.
+\end{DoxyItemize}
+\item Turn Sequence
+\begin{DoxyItemize}
+\item Each player takes turns drawing a set number of cards from their deck into their hand.
+\item Players use action points to play cards from their hand, such as attacking enemies, casting spells, or using items.
+\item \doxylink{classEnemy}{Enemy} characters take their turns to attack players or perform actions based on predefined behaviors.
+\end{DoxyItemize}
+\item Combat Resolution
+\begin{DoxyItemize}
+\item The effects of played cards are resolved in a specific order, calculating damage dealt, healing, and status effects applied.
+\item Players and enemies update their health and other attributes based on the outcomes of combat.
+\end{DoxyItemize}
+\item End Turn
+\begin{DoxyItemize}
+\item Players end their turn by discarding excess cards and preparing for the next turn.
+\item Special events or conditions may trigger at the end of the turn, such as status effects expiring or quests being completed.
+\end{DoxyItemize}
+\item Game End
+\begin{DoxyItemize}
+\item The game ends when a victory or defeat condition is met, such as all enemies being defeated or a player\textquotesingle{}s health reaching zero.
+\item Players receive rewards or experience points based on their performance, and the game state is saved for future sessions. 
+\end{DoxyItemize}
+\end{DoxyEnumerate}
