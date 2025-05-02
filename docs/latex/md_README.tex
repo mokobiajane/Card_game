@@ -1,0 +1,137 @@
+\chapter{Card\+\_\+game}
+\hypertarget{md_README}{}\label{md_README}\index{Card\_game@{Card\_game}}
+\label{md_README_autotoc_md5}%
+\Hypertarget{md_README_autotoc_md5}%
+ Mokobia Jane Chidima
+
+Group\+:24.\+B83-\/mm
+
+\href{mailto:st135735@student.spbu.ru}{\texttt{ st135735@student.\+spbu.\+ru}}
+
+This project includes various folders and files.
+
+
+\begin{DoxyEnumerate}
+\item The .github files holds where the CI code was written
+\item The docs folder holds the uml folder(class diagram), architectural structure folder( where you will find the general architectural description, class diagram.\+png/.md, component diagram.\+png/.md ,usage scenerio, and test plan.)
+\end{DoxyEnumerate}\hypertarget{md_README_autotoc_md6}{}\doxysection{\texorpdfstring{🎮 Card RPG Lab}{🎮 Card RPG Lab}}\label{md_README_autotoc_md6}
+
+
+   \mbox{[}\mbox{]}() \mbox{[}\mbox{]}()
+
+{\bfseries{Developer}}\+: Basmanov Rodion (Group B81-\/mm) ~\newline
+ {\bfseries{Contact}}\+: \href{mailto:st135699@student.spbu.ru}{\texttt{ st135699@student.\+spbu.\+ru}} 
+
+\DoxyHorRuler{0}
+\hypertarget{md_README_autotoc_md8}{}\doxysubsection{\texorpdfstring{📖 Project Description}{📖 Project Description}}\label{md_README_autotoc_md8}
+{\bfseries{\doxylink{classCard}{Card} RPG Lab}} is a turn-\/based card role-\/playing game where players battle AI-\/controlled enemies using character abilities, effect cards, and items.\hypertarget{md_README_autotoc_md9}{}\doxysubsubsection{\texorpdfstring{✨ Key Features}{✨ Key Features}}\label{md_README_autotoc_md9}
+
+\begin{DoxyItemize}
+\item {\bfseries{Diverse Character Classes}}\+: Warrior, Mage, Archer, Healer with unique abilities and characteristics
+\item {\bfseries{Advanced \doxylink{classCard}{Card} System}}\+: Attack, defense, special effect, and spell cards
+\item {\bfseries{Intelligent Opponents}}\+: Multiple AI levels (Easy, Advanced, Boss) with different strategies
+\item {\bfseries{Status Effects}}\+: Burning, Poison, Regeneration, Slow, and other time-\/based effects
+\item {\bfseries{Inventory System}}\+: Items, weapons, armor, and consumables
+\item {\bfseries{Various Game Modes}}\+: \doxylink{classBattle}{Battle}, Dungeon, Exploration, Trading, PvP
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md_README_autotoc_md11}{}\doxysubsection{\texorpdfstring{🏗️ Architecture}{🏗️ Architecture}}\label{md_README_autotoc_md11}
+The project has a modular architecture based on object-\/oriented programming, consisting of the following main components\+:
+
+
+\begin{DoxyItemize}
+\item \doxysectlink{md_docs_2architecture_2architecture__description}{System Overview}{0}
+\item \doxysectlink{md_docs_2architecture_2usage__scenarios}{Requirements and Use Cases}{0}
+\item \doxysectlink{md_docs_2architecture_2component__diagram}{Component Diagram}{0}
+\item \doxysectlink{md_docs_2architecture_2class__diagram}{Class Diagram}{0}
+\item \doxysectlink{md_docs_2architecture_2test__plan}{Testing Plan}{0}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md12}{}\doxysubsubsection{\texorpdfstring{📂 Project Structure}{📂 Project Structure}}\label{md_README_autotoc_md12}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{card-\/rpg-\/lab/}
+\DoxyCodeLine{├──\ include/\ \ \ \ \ \ \ \ \ \ \ \#\ Header\ files\ (*.h)}
+\DoxyCodeLine{├──\ src/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Source\ code\ (*.cpp)}
+\DoxyCodeLine{├──\ tests/\ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Unit\ tests}
+\DoxyCodeLine{├──\ docs/\ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Project\ documentation}
+\DoxyCodeLine{├──\ build/\ \ \ \ \ \ \ \ \ \ \ \ \ \#\ Build\ files}
+\DoxyCodeLine{├──\ CMakeLists.txt\ \ \ \ \ \#\ Build\ configuration}
+\DoxyCodeLine{├──\ Doxyfile\ \ \ \ \ \ \ \ \ \ \ \#\ Doxygen\ settings}
+\DoxyCodeLine{├──\ assets\ \ \ \ \ \ \ \ \ \ \ \ \ \#\ holds\ fonts\ \&\ images}
+\DoxyCodeLine{└──\ README.md\ \ \ \ \ \ \ \ \ \ \#\ This\ file}
+
+\end{DoxyCode}
+
+
+\DoxyHorRuler{0}
+\hypertarget{md_README_autotoc_md14}{}\doxysubsection{\texorpdfstring{🔧 Dependencies and Installation}{🔧 Dependencies and Installation}}\label{md_README_autotoc_md14}
+\hypertarget{md_README_autotoc_md15}{}\doxysubsubsection{\texorpdfstring{Requirements}{Requirements}}\label{md_README_autotoc_md15}
+
+\begin{DoxyItemize}
+\item {\bfseries{C++17}} compatible compiler (GCC, Clang, MSVC)
+\item {\bfseries{CMake}} (version 3.\+10 or higher)
+\item {\bfseries{Google Test}} (for unit tests)
+\item {\bfseries{Doxygen}} (for documentation generation)
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md16}{}\doxysection{\texorpdfstring{Build the project}{Build the project}}\label{md_README_autotoc_md16}
+mkdir build \&\& cd build cmake .. cmake --build . ./\+Card\+Game 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{-\/-\/-\/}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#\#\ 🎮\ Gameplay}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#\#\#\ Starting\ the\ Game}
+
+\end{DoxyCode}
+ bash \hypertarget{md_README_autotoc_md17}{}\doxysection{\texorpdfstring{From the build directory}{From the build directory}}\label{md_README_autotoc_md17}
+./card-\/rpg-\/lab \`{}\hypertarget{md_README_autotoc_md18}{}\doxyparagraph{\texorpdfstring{Battle Actions\+:}{Battle Actions:}}\label{md_README_autotoc_md18}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1\ -\/\ Attack}
+\DoxyCodeLine{2\ -\/\ Use\ Card}
+\DoxyCodeLine{3\ -\/\ Defend}
+
+\end{DoxyCode}
+
+
+\DoxyHorRuler{0}
+\hypertarget{md_README_autotoc_md20}{}\doxysubsection{\texorpdfstring{🧪 Testing}{🧪 Testing}}\label{md_README_autotoc_md20}
+The project has complete unit test coverage using the Catch2 framework.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#\ Run\ tests}
+\DoxyCodeLine{cd\ build}
+\DoxyCodeLine{ctest}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md21}{}\doxysubsection{\texorpdfstring{📚 Documentation}{📚 Documentation}}\label{md_README_autotoc_md21}
+The project code is fully documented using Doxygen.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#\ Generate\ documentation}
+\DoxyCodeLine{doxygen\ Doxyfile}
+
+\end{DoxyCode}
+
+
+After running this command, you will find the generated documentation in the {\ttfamily docs/html} directory.
+
+\DoxyHorRuler{0}
+\hypertarget{md_README_autotoc_md23}{}\doxysubsection{\texorpdfstring{💻 Developer Guide}{💻 Developer Guide}}\label{md_README_autotoc_md23}
+\hypertarget{md_README_autotoc_md24}{}\doxysubsubsection{\texorpdfstring{Design Principles}{Design Principles}}\label{md_README_autotoc_md24}
+The codebase follows these design principles\+:
+\begin{DoxyItemize}
+\item {\bfseries{Object-\/oriented architecture}} with clear inheritance hierarchies
+\item {\bfseries{Complete unit test coverage}}
+\item {\bfseries{Comprehensive Doxygen documentation}}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md25}{}\doxysubsubsection{\texorpdfstring{Adding a New Character Class}{Adding a New Character Class}}\label{md_README_autotoc_md25}
+\hypertarget{md_README_autotoc_md26}{}\doxysubsection{\texorpdfstring{📋 Development Roadmap}{📋 Development Roadmap}}\label{md_README_autotoc_md26}
+
+\begin{DoxyItemize}
+\item {\bfseries{Graphical Interface}}\+: Adding visual representation of the game (SFML)
+\item {\bfseries{Multiplayer}}\+: Network play via local network or internet
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+ 

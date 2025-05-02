@@ -1,0 +1,27 @@
+var annotated_dup =
+[
+    [ "Achievement", "classAchievement.html", "classAchievement" ],
+    [ "ArmorUpCard", "classArmorUpCard.html", "classArmorUpCard" ],
+    [ "Battle", "classBattle.html", "classBattle" ],
+    [ "BattleCryCard", "classBattleCryCard.html", "classBattleCryCard" ],
+    [ "Board", "classBoard.html", "classBoard" ],
+    [ "Card", "classCard.html", "classCard" ],
+    [ "CardGame", "classCardGame.html", "classCardGame" ],
+    [ "Deck", "classDeck.html", "classDeck" ],
+    [ "DefendCard", "classDefendCard.html", "classDefendCard" ],
+    [ "Effect", "classEffect.html", "classEffect" ],
+    [ "Enemy", "classEnemy.html", "classEnemy" ],
+    [ "Equipment", "classEquipment.html", "classEquipment" ],
+    [ "GameWindow", "classGameWindow.html", "classGameWindow" ],
+    [ "HealingPotionCard", "classHealingPotionCard.html", "classHealingPotionCard" ],
+    [ "HealthPotion", "classHealthPotion.html", "classHealthPotion" ],
+    [ "Level", "classLevel.html", "classLevel" ],
+    [ "Mana", "classMana.html", "classMana" ],
+    [ "Player", "classPlayer.html", "classPlayer" ],
+    [ "PowerStrikeCard", "classPowerStrikeCard.html", "classPowerStrikeCard" ],
+    [ "Quest", "classQuest.html", "classQuest" ],
+    [ "ShieldBashCard", "classShieldBashCard.html", "classShieldBashCard" ],
+    [ "Skill", "classSkill.html", "classSkill" ],
+    [ "Spell", "classSpell.html", "classSpell" ],
+    [ "TurnManager", "classTurnManager.html", "classTurnManager" ]
+];

@@ -1,0 +1,33 @@
+\doxysection{Game\+Window.\+h}
+\hypertarget{GameWindow_8h_source}{}\label{GameWindow_8h_source}\index{include/GameWindow.h@{include/GameWindow.h}}
+\mbox{\hyperlink{GameWindow_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GAMEWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GAMEWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{cardgame_8h}{cardgame.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{GameWindow_8h_a1fbb23a4b2427b486453417312008cfb}{TurnState}}\ \{\ \mbox{\hyperlink{GameWindow_8h_a1fbb23a4b2427b486453417312008cfba074bbf7a9f1fc57292380e29fb6323de}{PLAYER\_TURN}},\ \mbox{\hyperlink{GameWindow_8h_a1fbb23a4b2427b486453417312008cfba66de36701162361094d072e8c78d57b5}{ENEMY\_TURN}},\ \mbox{\hyperlink{GameWindow_8h_a1fbb23a4b2427b486453417312008cfba871723195985a4ae22d7e10d99bf8a00}{GAME\_OVER}}\ \};}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGameWindow}{GameWindow}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{classGameWindow}{GameWindow}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keyword}{const}\ std::string\&\ title);}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{classGameWindow_a55b071c0390e45c064a160c1e6baaa08}{\string~GameWindow}}();}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameWindow_a1904a012066156fdba18adf52f638570}{run}}(\mbox{\hyperlink{classCardGame}{CardGame}}\&\ game);}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ sf::RenderWindow\ \mbox{\hyperlink{classGameWindow_a484ac2b5a9653b255b6ab6637c821cd2}{window}};}
+\DoxyCodeLine{00017\ \ \ \ \ sf::Font\ \mbox{\hyperlink{classGameWindow_acd693c6343768d7b57e8a5bdd40e629a}{font}};}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{GameWindow_8h_a1fbb23a4b2427b486453417312008cfb}{TurnState}}\ \mbox{\hyperlink{classGameWindow_a720d86332f03a202ce5f3bfc81b37382}{state}};}
+\DoxyCodeLine{00019\ \ \ \ \ sf::Clock\ \mbox{\hyperlink{classGameWindow_a3cca59319cc3fdf62b1878da4ff88d26}{turnClock}};}
+\DoxyCodeLine{00020\ \ \ \ \ std::string\ \mbox{\hyperlink{classGameWindow_a641133c43f0fa84bdb9f20a450bc6c98}{lastAction}};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameWindow_a7d68131f49a39775808c0d336ee9710c}{processEvents}}(\mbox{\hyperlink{classCardGame}{CardGame}}\&\ game);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameWindow_a50a2248ee6576b36772ecae80e3c5687}{update}}(\mbox{\hyperlink{classCardGame}{CardGame}}\&\ game);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameWindow_aaae9d5e2ce30752e75e3eced3d97075c}{render}}(\mbox{\hyperlink{classCardGame}{CardGame}}\&\ game);}
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

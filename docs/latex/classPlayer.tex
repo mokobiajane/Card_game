@@ -1,0 +1,221 @@
+\doxysection{Player Class Reference}
+\hypertarget{classPlayer}{}\label{classPlayer}\index{Player@{Player}}
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+
+
+Collaboration diagram for Player\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer_a21bf20e83847a81eb8fa5d4a9b3780ba}{Player}} (const std\+::string \&\mbox{\hyperlink{classPlayer_af9c920fabaafdeb7961a645315b521ff}{name}}, int \mbox{\hyperlink{classPlayer_aad33b52bfe73c4c978a3135172f286a0}{health}}, int mana\+Val)
+\item 
+\mbox{\hyperlink{classPlayer_a749d2c00e1fe0f5c2746f7505a58c062}{\texorpdfstring{$\sim$}{\string~}\+Player}} ()
+\item 
+void \mbox{\hyperlink{classPlayer_a957267a2a3947345ccb397d569771c51}{start\+Turn}} ()
+\item 
+void \mbox{\hyperlink{classPlayer_ad452e6e8484a4b0d855fb7c5d4a8294a}{play\+Card}} (int index, \mbox{\hyperlink{classEnemy}{Enemy}} \texorpdfstring{$\ast$}{*}enemy)
+\item 
+void \mbox{\hyperlink{classPlayer_a8f94dee02647b4610da5dce35c2db029}{receive\+Damage}} (int damage)
+\item 
+void \mbox{\hyperlink{classPlayer_aa7eae982673d2d8027ac5f45e6b5b4f7}{heal}} (int amount)
+\item 
+void \mbox{\hyperlink{classPlayer_a8ebd136c53ec6b03323a09053d25f94b}{add\+Defense}} (int def)
+\item 
+void \mbox{\hyperlink{classPlayer_aa12e31ac59907f8d92dca754b3965317}{add\+Attack\+Bonus}} (int bonus)
+\item 
+int \mbox{\hyperlink{classPlayer_ac793b17747f8def6b05dd96f5e5c9adc}{get\+Attack\+Bonus}} () const
+\item 
+void \mbox{\hyperlink{classPlayer_a10e76a9661e1431e42b3413db421ee6d}{reset\+Attack\+Bonus}} ()
+\item 
+std\+::string \mbox{\hyperlink{classPlayer_a73e4ff2d70e62ca7e3be1d9b4ad9de85}{get\+Name}} () const
+\item 
+int \mbox{\hyperlink{classPlayer_a518eb6e16ed51238b7c1511ccfe6572f}{get\+Health}} () const
+\item 
+int \mbox{\hyperlink{classPlayer_af6201b43b28a9a285f83184fb8d30bff}{get\+Defense}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDeck}{Deck}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classPlayer_a5aa5198f9f50651e38fb6a38b1d64602}{deck}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCard}{Card}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classPlayer_ab2725dd4933a431a7d65446995077c05}{hand}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCard}{Card}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classPlayer_a5f303f184d5ce634c8ded40bcb56abc6}{discard\+Pile}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPlayer_a8bf00c3983be4c6c14b92fccee08ae48}{update\+Effects}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classPlayer_af9c920fabaafdeb7961a645315b521ff}{name}}
+\item 
+int \mbox{\hyperlink{classPlayer_aad33b52bfe73c4c978a3135172f286a0}{health}}
+\item 
+int \mbox{\hyperlink{classPlayer_a82b65c602374456ac3af9429a0d245c9}{defense}}
+\item 
+int \mbox{\hyperlink{classPlayer_ad4375ccee6fa0bf5b8baeecbcbf1c129}{attack\+Bonus}}
+\item 
+\mbox{\hyperlink{classMana}{Mana}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classPlayer_a2222bd2fd05c45c3b733b3cb7a91adbd}{mana}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classEffect}{Effect}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classPlayer_ad08569086307d8c9fa7aa20463c13eb5}{active\+Effects}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classPlayer_a21bf20e83847a81eb8fa5d4a9b3780ba}\label{classPlayer_a21bf20e83847a81eb8fa5d4a9b3780ba} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{int}]{health,  }\item[{int}]{mana\+Val }\end{DoxyParamCaption})}
+
+\Hypertarget{classPlayer_a749d2c00e1fe0f5c2746f7505a58c062}\label{classPlayer_a749d2c00e1fe0f5c2746f7505a58c062} 
+\index{Player@{Player}!````~Player@{\texorpdfstring{$\sim$}{\string~}Player}}
+\index{````~Player@{\texorpdfstring{$\sim$}{\string~}Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Player()}{\string~Player()}}
+{\footnotesize\ttfamily Player\+::\texorpdfstring{$\sim$}{\string~}\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPlayer_aa12e31ac59907f8d92dca754b3965317}\label{classPlayer_aa12e31ac59907f8d92dca754b3965317} 
+\index{Player@{Player}!addAttackBonus@{addAttackBonus}}
+\index{addAttackBonus@{addAttackBonus}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addAttackBonus()}{addAttackBonus()}}
+{\footnotesize\ttfamily void Player\+::add\+Attack\+Bonus (\begin{DoxyParamCaption}\item[{int}]{bonus }\end{DoxyParamCaption})}
+
+\Hypertarget{classPlayer_a8ebd136c53ec6b03323a09053d25f94b}\label{classPlayer_a8ebd136c53ec6b03323a09053d25f94b} 
+\index{Player@{Player}!addDefense@{addDefense}}
+\index{addDefense@{addDefense}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addDefense()}{addDefense()}}
+{\footnotesize\ttfamily void Player\+::add\+Defense (\begin{DoxyParamCaption}\item[{int}]{def }\end{DoxyParamCaption})}
+
+\Hypertarget{classPlayer_ac793b17747f8def6b05dd96f5e5c9adc}\label{classPlayer_ac793b17747f8def6b05dd96f5e5c9adc} 
+\index{Player@{Player}!getAttackBonus@{getAttackBonus}}
+\index{getAttackBonus@{getAttackBonus}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getAttackBonus()}{getAttackBonus()}}
+{\footnotesize\ttfamily int Player\+::get\+Attack\+Bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classPlayer_af6201b43b28a9a285f83184fb8d30bff}\label{classPlayer_af6201b43b28a9a285f83184fb8d30bff} 
+\index{Player@{Player}!getDefense@{getDefense}}
+\index{getDefense@{getDefense}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getDefense()}{getDefense()}}
+{\footnotesize\ttfamily int Player\+::get\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classPlayer_a518eb6e16ed51238b7c1511ccfe6572f}\label{classPlayer_a518eb6e16ed51238b7c1511ccfe6572f} 
+\index{Player@{Player}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHealth()}{getHealth()}}
+{\footnotesize\ttfamily int Player\+::get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classPlayer_a73e4ff2d70e62ca7e3be1d9b4ad9de85}\label{classPlayer_a73e4ff2d70e62ca7e3be1d9b4ad9de85} 
+\index{Player@{Player}!getName@{getName}}
+\index{getName@{getName}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Player\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classPlayer_aa7eae982673d2d8027ac5f45e6b5b4f7}\label{classPlayer_aa7eae982673d2d8027ac5f45e6b5b4f7} 
+\index{Player@{Player}!heal@{heal}}
+\index{heal@{heal}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{heal()}{heal()}}
+{\footnotesize\ttfamily void Player\+::heal (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+\Hypertarget{classPlayer_ad452e6e8484a4b0d855fb7c5d4a8294a}\label{classPlayer_ad452e6e8484a4b0d855fb7c5d4a8294a} 
+\index{Player@{Player}!playCard@{playCard}}
+\index{playCard@{playCard}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{playCard()}{playCard()}}
+{\footnotesize\ttfamily void Player\+::play\+Card (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{classEnemy}{Enemy}} \texorpdfstring{$\ast$}{*}}]{enemy }\end{DoxyParamCaption})}
+
+\Hypertarget{classPlayer_a8f94dee02647b4610da5dce35c2db029}\label{classPlayer_a8f94dee02647b4610da5dce35c2db029} 
+\index{Player@{Player}!receiveDamage@{receiveDamage}}
+\index{receiveDamage@{receiveDamage}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{receiveDamage()}{receiveDamage()}}
+{\footnotesize\ttfamily void Player\+::receive\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})}
+
+\Hypertarget{classPlayer_a10e76a9661e1431e42b3413db421ee6d}\label{classPlayer_a10e76a9661e1431e42b3413db421ee6d} 
+\index{Player@{Player}!resetAttackBonus@{resetAttackBonus}}
+\index{resetAttackBonus@{resetAttackBonus}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{resetAttackBonus()}{resetAttackBonus()}}
+{\footnotesize\ttfamily void Player\+::reset\+Attack\+Bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classPlayer_a957267a2a3947345ccb397d569771c51}\label{classPlayer_a957267a2a3947345ccb397d569771c51} 
+\index{Player@{Player}!startTurn@{startTurn}}
+\index{startTurn@{startTurn}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{startTurn()}{startTurn()}}
+{\footnotesize\ttfamily void Player\+::start\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classPlayer_a8bf00c3983be4c6c14b92fccee08ae48}\label{classPlayer_a8bf00c3983be4c6c14b92fccee08ae48} 
+\index{Player@{Player}!updateEffects@{updateEffects}}
+\index{updateEffects@{updateEffects}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{updateEffects()}{updateEffects()}}
+{\footnotesize\ttfamily void Player\+::update\+Effects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classPlayer_ad08569086307d8c9fa7aa20463c13eb5}\label{classPlayer_ad08569086307d8c9fa7aa20463c13eb5} 
+\index{Player@{Player}!activeEffects@{activeEffects}}
+\index{activeEffects@{activeEffects}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{activeEffects}{activeEffects}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classEffect}{Effect}}\texorpdfstring{$\ast$}{*}$>$ Player\+::active\+Effects\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPlayer_ad4375ccee6fa0bf5b8baeecbcbf1c129}\label{classPlayer_ad4375ccee6fa0bf5b8baeecbcbf1c129} 
+\index{Player@{Player}!attackBonus@{attackBonus}}
+\index{attackBonus@{attackBonus}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{attackBonus}{attackBonus}}
+{\footnotesize\ttfamily int Player\+::attack\+Bonus\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPlayer_a5aa5198f9f50651e38fb6a38b1d64602}\label{classPlayer_a5aa5198f9f50651e38fb6a38b1d64602} 
+\index{Player@{Player}!deck@{deck}}
+\index{deck@{deck}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{deck}{deck}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDeck}{Deck}}\texorpdfstring{$\ast$}{*} Player\+::deck}
+
+\Hypertarget{classPlayer_a82b65c602374456ac3af9429a0d245c9}\label{classPlayer_a82b65c602374456ac3af9429a0d245c9} 
+\index{Player@{Player}!defense@{defense}}
+\index{defense@{defense}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{defense}{defense}}
+{\footnotesize\ttfamily int Player\+::defense\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPlayer_a5f303f184d5ce634c8ded40bcb56abc6}\label{classPlayer_a5f303f184d5ce634c8ded40bcb56abc6} 
+\index{Player@{Player}!discardPile@{discardPile}}
+\index{discardPile@{discardPile}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{discardPile}{discardPile}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCard}{Card}}\texorpdfstring{$\ast$}{*}$>$ Player\+::discard\+Pile}
+
+\Hypertarget{classPlayer_ab2725dd4933a431a7d65446995077c05}\label{classPlayer_ab2725dd4933a431a7d65446995077c05} 
+\index{Player@{Player}!hand@{hand}}
+\index{hand@{hand}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{hand}{hand}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCard}{Card}}\texorpdfstring{$\ast$}{*}$>$ Player\+::hand}
+
+\Hypertarget{classPlayer_aad33b52bfe73c4c978a3135172f286a0}\label{classPlayer_aad33b52bfe73c4c978a3135172f286a0} 
+\index{Player@{Player}!health@{health}}
+\index{health@{health}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily int Player\+::health\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPlayer_a2222bd2fd05c45c3b733b3cb7a91adbd}\label{classPlayer_a2222bd2fd05c45c3b733b3cb7a91adbd} 
+\index{Player@{Player}!mana@{mana}}
+\index{mana@{mana}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{mana}{mana}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMana}{Mana}}\texorpdfstring{$\ast$}{*} Player\+::mana\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPlayer_af9c920fabaafdeb7961a645315b521ff}\label{classPlayer_af9c920fabaafdeb7961a645315b521ff} 
+\index{Player@{Player}!name@{name}}
+\index{name@{name}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Player\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Player_8h}{Player.\+h}}\item 
+src/\mbox{\hyperlink{player_8cpp}{player.\+cpp}}\end{DoxyCompactItemize}

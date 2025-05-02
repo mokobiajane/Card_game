@@ -1,0 +1,54 @@
+\doxysection{Player.\+h}
+\hypertarget{Player_8h_source}{}\label{Player_8h_source}\index{include/Player.h@{include/Player.h}}
+\mbox{\hyperlink{Player_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ PLAYER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ PLAYER\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{card_8h}{card.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mana_8h}{mana.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{effect_8h}{effect.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDeck}{Deck}};}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEnemy}{Enemy}};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPlayer}{Player}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classPlayer_af9c920fabaafdeb7961a645315b521ff}{name}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer_aad33b52bfe73c4c978a3135172f286a0}{health}},\ \textcolor{keywordtype}{int}\ manaVal);}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classPlayer_a749d2c00e1fe0f5c2746f7505a58c062}{\string~Player}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPlayer_a957267a2a3947345ccb397d569771c51}{startTurn}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPlayer_ad452e6e8484a4b0d855fb7c5d4a8294a}{playCard}}(\textcolor{keywordtype}{int}\ index,\ \mbox{\hyperlink{classEnemy}{Enemy}}*\ enemy);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPlayer_a8f94dee02647b4610da5dce35c2db029}{receiveDamage}}(\textcolor{keywordtype}{int}\ damage);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPlayer_aa7eae982673d2d8027ac5f45e6b5b4f7}{heal}}(\textcolor{keywordtype}{int}\ amount);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPlayer_a8ebd136c53ec6b03323a09053d25f94b}{addDefense}}(\textcolor{keywordtype}{int}\ def);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPlayer_aa12e31ac59907f8d92dca754b3965317}{addAttackBonus}}(\textcolor{keywordtype}{int}\ bonus);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer_ac793b17747f8def6b05dd96f5e5c9adc}{getAttackBonus}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPlayer_a10e76a9661e1431e42b3413db421ee6d}{resetAttackBonus}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ std::string\ \mbox{\hyperlink{classPlayer_a73e4ff2d70e62ca7e3be1d9b4ad9de85}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer_a518eb6e16ed51238b7c1511ccfe6572f}{getHealth}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer_af6201b43b28a9a285f83184fb8d30bff}{getDefense}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{classDeck}{Deck}}*\ \mbox{\hyperlink{classPlayer_a5aa5198f9f50651e38fb6a38b1d64602}{deck}};}
+\DoxyCodeLine{00034\ \ \ \ \ std::vector<Card*>\ \mbox{\hyperlink{classPlayer_ab2725dd4933a431a7d65446995077c05}{hand}};}
+\DoxyCodeLine{00035\ \ \ \ \ std::vector<Card*>\ \mbox{\hyperlink{classPlayer_a5f303f184d5ce634c8ded40bcb56abc6}{discardPile}};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPlayer_a8bf00c3983be4c6c14b92fccee08ae48}{updateEffects}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ std::string\ \mbox{\hyperlink{classPlayer_af9c920fabaafdeb7961a645315b521ff}{name}};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer_aad33b52bfe73c4c978a3135172f286a0}{health}};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer_a82b65c602374456ac3af9429a0d245c9}{defense}};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer_ad4375ccee6fa0bf5b8baeecbcbf1c129}{attackBonus}};\ }
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{classMana}{Mana}}*\ \mbox{\hyperlink{classPlayer_a2222bd2fd05c45c3b733b3cb7a91adbd}{mana}};}
+\DoxyCodeLine{00045\ \ \ \ \ std::vector<Effect*>\ \mbox{\hyperlink{classPlayer_ad08569086307d8c9fa7aa20463c13eb5}{activeEffects}};}
+\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

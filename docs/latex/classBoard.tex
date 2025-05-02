@@ -1,0 +1,99 @@
+\doxysection{Board Class Reference}
+\hypertarget{classBoard}{}\label{classBoard}\index{Board@{Board}}
+
+
+{\ttfamily \#include $<$board.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}{Board}} ()
+\item 
+\mbox{\hyperlink{classBoard_af73f45730119a1fd8f6670f53f959e68}{\texorpdfstring{$\sim$}{\string~}\+Board}} ()
+\item 
+void \mbox{\hyperlink{classBoard_a25ddc8874be8422bb48fa66d14e32b04}{add\+Player}} (\mbox{\hyperlink{classPlayer}{Player}} \texorpdfstring{$\ast$}{*}player)
+\item 
+void \mbox{\hyperlink{classBoard_a3d618d7c957fd651fa8784acfe12d985}{add\+Enemy}} (\mbox{\hyperlink{classEnemy}{Enemy}} \texorpdfstring{$\ast$}{*}enemy)
+\item 
+void \mbox{\hyperlink{classBoard_aa1e9675f86e4e5b9436ef15e57536d1e}{update\+Board}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classPlayer}{Player}} \texorpdfstring{$\ast$}{*} $>$ \& \mbox{\hyperlink{classBoard_a7c71d41ef5dcac3f50378d2cdb41bc38}{get\+Players}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classEnemy}{Enemy}} \texorpdfstring{$\ast$}{*} $>$ \& \mbox{\hyperlink{classBoard_ab829869d6365f5f2d3615e3b2221963a}{get\+Enemies}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classPlayer}{Player}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classBoard_a621ff0b92f97301a60a76386b466bd45}{players}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classEnemy}{Enemy}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classBoard_a645647404430e97410d816409c8ec55c}{enemies}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}\label{classBoard_a9ee491d4fea680cf69b033374a9fdfcb} 
+\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}}
+{\footnotesize\ttfamily Board\+::\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classBoard_af73f45730119a1fd8f6670f53f959e68}\label{classBoard_af73f45730119a1fd8f6670f53f959e68} 
+\index{Board@{Board}!````~Board@{\texorpdfstring{$\sim$}{\string~}Board}}
+\index{````~Board@{\texorpdfstring{$\sim$}{\string~}Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Board()}{\string~Board()}}
+{\footnotesize\ttfamily Board\+::\texorpdfstring{$\sim$}{\string~}\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBoard_a3d618d7c957fd651fa8784acfe12d985}\label{classBoard_a3d618d7c957fd651fa8784acfe12d985} 
+\index{Board@{Board}!addEnemy@{addEnemy}}
+\index{addEnemy@{addEnemy}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{addEnemy()}{addEnemy()}}
+{\footnotesize\ttfamily void Board\+::add\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEnemy}{Enemy}} \texorpdfstring{$\ast$}{*}}]{enemy }\end{DoxyParamCaption})}
+
+\Hypertarget{classBoard_a25ddc8874be8422bb48fa66d14e32b04}\label{classBoard_a25ddc8874be8422bb48fa66d14e32b04} 
+\index{Board@{Board}!addPlayer@{addPlayer}}
+\index{addPlayer@{addPlayer}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{addPlayer()}{addPlayer()}}
+{\footnotesize\ttfamily void Board\+::add\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} \texorpdfstring{$\ast$}{*}}]{player }\end{DoxyParamCaption})}
+
+\Hypertarget{classBoard_ab829869d6365f5f2d3615e3b2221963a}\label{classBoard_ab829869d6365f5f2d3615e3b2221963a} 
+\index{Board@{Board}!getEnemies@{getEnemies}}
+\index{getEnemies@{getEnemies}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getEnemies()}{getEnemies()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classEnemy}{Enemy}} \texorpdfstring{$\ast$}{*} $>$ \& Board\+::get\+Enemies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classBoard_a7c71d41ef5dcac3f50378d2cdb41bc38}\label{classBoard_a7c71d41ef5dcac3f50378d2cdb41bc38} 
+\index{Board@{Board}!getPlayers@{getPlayers}}
+\index{getPlayers@{getPlayers}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getPlayers()}{getPlayers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classPlayer}{Player}} \texorpdfstring{$\ast$}{*} $>$ \& Board\+::get\+Players (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classBoard_aa1e9675f86e4e5b9436ef15e57536d1e}\label{classBoard_aa1e9675f86e4e5b9436ef15e57536d1e} 
+\index{Board@{Board}!updateBoard@{updateBoard}}
+\index{updateBoard@{updateBoard}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{updateBoard()}{updateBoard()}}
+{\footnotesize\ttfamily void Board\+::update\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classBoard_a645647404430e97410d816409c8ec55c}\label{classBoard_a645647404430e97410d816409c8ec55c} 
+\index{Board@{Board}!enemies@{enemies}}
+\index{enemies@{enemies}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{enemies}{enemies}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classEnemy}{Enemy}}\texorpdfstring{$\ast$}{*}$>$ Board\+::enemies\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classBoard_a621ff0b92f97301a60a76386b466bd45}\label{classBoard_a621ff0b92f97301a60a76386b466bd45} 
+\index{Board@{Board}!players@{players}}
+\index{players@{players}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{players}{players}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classPlayer}{Player}}\texorpdfstring{$\ast$}{*}$>$ Board\+::players\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{board_8h}{board.\+h}}\item 
+src/\mbox{\hyperlink{board_8cpp}{board.\+cpp}}\end{DoxyCompactItemize}

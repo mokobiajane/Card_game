@@ -1,0 +1,26 @@
+var classPlayer =
+[
+    [ "Player", "classPlayer.html#a21bf20e83847a81eb8fa5d4a9b3780ba", null ],
+    [ "~Player", "classPlayer.html#a749d2c00e1fe0f5c2746f7505a58c062", null ],
+    [ "addAttackBonus", "classPlayer.html#aa12e31ac59907f8d92dca754b3965317", null ],
+    [ "addDefense", "classPlayer.html#a8ebd136c53ec6b03323a09053d25f94b", null ],
+    [ "getAttackBonus", "classPlayer.html#ac793b17747f8def6b05dd96f5e5c9adc", null ],
+    [ "getDefense", "classPlayer.html#af6201b43b28a9a285f83184fb8d30bff", null ],
+    [ "getHealth", "classPlayer.html#a518eb6e16ed51238b7c1511ccfe6572f", null ],
+    [ "getName", "classPlayer.html#a73e4ff2d70e62ca7e3be1d9b4ad9de85", null ],
+    [ "heal", "classPlayer.html#aa7eae982673d2d8027ac5f45e6b5b4f7", null ],
+    [ "playCard", "classPlayer.html#ad452e6e8484a4b0d855fb7c5d4a8294a", null ],
+    [ "receiveDamage", "classPlayer.html#a8f94dee02647b4610da5dce35c2db029", null ],
+    [ "resetAttackBonus", "classPlayer.html#a10e76a9661e1431e42b3413db421ee6d", null ],
+    [ "startTurn", "classPlayer.html#a957267a2a3947345ccb397d569771c51", null ],
+    [ "updateEffects", "classPlayer.html#a8bf00c3983be4c6c14b92fccee08ae48", null ],
+    [ "activeEffects", "classPlayer.html#ad08569086307d8c9fa7aa20463c13eb5", null ],
+    [ "attackBonus", "classPlayer.html#ad4375ccee6fa0bf5b8baeecbcbf1c129", null ],
+    [ "deck", "classPlayer.html#a5aa5198f9f50651e38fb6a38b1d64602", null ],
+    [ "defense", "classPlayer.html#a82b65c602374456ac3af9429a0d245c9", null ],
+    [ "discardPile", "classPlayer.html#a5f303f184d5ce634c8ded40bcb56abc6", null ],
+    [ "hand", "classPlayer.html#ab2725dd4933a431a7d65446995077c05", null ],
+    [ "health", "classPlayer.html#aad33b52bfe73c4c978a3135172f286a0", null ],
+    [ "mana", "classPlayer.html#a2222bd2fd05c45c3b733b3cb7a91adbd", null ],
+    [ "name", "classPlayer.html#af9c920fabaafdeb7961a645315b521ff", null ]
+];

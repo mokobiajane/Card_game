@@ -1,0 +1,43 @@
+\chapter{test\+\_\+plan}
+\hypertarget{md_docs_2architecture_2test__plan}{}\label{md_docs_2architecture_2test__plan}\index{test\_plan@{test\_plan}}
+Test Plan\+:
+
+
+\begin{DoxyEnumerate}
+\item \doxylink{classPlayer}{Player} Class\+: Test methods like draw\+Card(), take\+Damage(), and play\+Card().
+\begin{DoxyItemize}
+\item \doxylink{classDeck}{Deck} Class\+: Test methods like shuffle() and draw\+Card().
+\item \doxylink{classCard}{Card} Class\+: Test methods like play\+Card(), checking card effects and costs.
+\item \doxylink{classEnemy}{Enemy} Class\+: Test methods like attack(), checking enemy behavior and interactions.
+\item \doxylink{classEquipment}{Equipment} Class\+: Test methods like equip(), checking equipment effects on players.
+\end{DoxyItemize}
+\item Integration Tests
+\begin{DoxyItemize}
+\item Turn Management\+: Test the sequence of player and enemy turns, ensuring correct drawing and playing of cards.
+\item \doxylink{classBattle}{Battle} System\+: Test combat interactions between players and enemies, verifying correct damage calculation and resolution.
+\item Resource Management\+: Test the management of health, mana, and experience points for players and enemies.
+\end{DoxyItemize}
+\item Gameplay Tests
+\begin{DoxyItemize}
+\item Game Flow\+: Test the overall gameplay loop, from game start to game end, ensuring smooth transitions and correct state updates.
+\item User Interface\+: Test the user interface elements, such as displaying cards, health bars, and action buttons.
+\item Special Events\+: Test the triggering and resolution of special events, such as status effects, quests, and achievements.
+\end{DoxyItemize}
+\item Performance Tests
+\begin{DoxyItemize}
+\item Load Testing\+: Test the game\textquotesingle{}s performance under different loads, ensuring smooth gameplay with multiple players and enemies.
+\item Stress Testing\+: Test the game\textquotesingle{}s stability under extreme conditions, such as rapid card plays and intense combat scenarios.
+\end{DoxyItemize}
+\item User Acceptance Tests
+\begin{DoxyItemize}
+\item Usability\+: Test the game\textquotesingle{}s usability, ensuring that players can easily understand and navigate the game interface.
+\item Fun Factor\+: Test the game\textquotesingle{}s enjoyment factor, gathering feedback from players on the overall experience and engagement.\+ 
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+ \texorpdfstring{$\sim$}{\string~}\texorpdfstring{$\sim$}{\string~}\+Tools and Coverage
+\begin{DoxyItemize}
+\item Testing Framework\+:     -\/ Utilize Google Test or Catch2 for unit and integration testing.
+\item CI Integration\+:     -\/ Set up Git\+Hub Actions to automatically build and run tests on each commit.
+\item Coverage Goals\+:     -\/ Aim for a minimum of 80\% code coverage on critical game components to ensure reliability and maintainability. 
+\end{DoxyItemize}

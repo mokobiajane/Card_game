@@ -1,0 +1,107 @@
+\doxysection{Card Class Reference}
+\hypertarget{classCard}{}\label{classCard}\index{Card@{Card}}
+
+
+{\ttfamily \#include $<$card.\+h$>$}
+
+
+
+Inheritance diagram for Card\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCard_ab85b3ea43a811beec3416fe76c4e63f4}{Card}} (const std\+::string \&\mbox{\hyperlink{classCard_a1f5013054990456125c82d805744062f}{name}}, const std\+::string \&\mbox{\hyperlink{classCard_a30578e5f8a1e67f8ef0dbab8a81a8e3e}{type}}, int \mbox{\hyperlink{classCard_ad3bd1c7caf053170251da88a6f00a59e}{cost}})
+\item 
+virtual \mbox{\hyperlink{classCard_a4e05b0b68e43e5e76c6194458cee874f}{\texorpdfstring{$\sim$}{\string~}\+Card}} ()
+\item 
+std\+::string \mbox{\hyperlink{classCard_a906ec0559a62e3bed4ccd518cacbe34c}{get\+Name}} () const
+\item 
+std\+::string \mbox{\hyperlink{classCard_a9daf21e616f1805429ca7a41068d5eb6}{get\+Type}} () const
+\item 
+int \mbox{\hyperlink{classCard_ab5077b74ee9343bf616db4497c6298a1}{get\+Cost}} () const
+\item 
+virtual void \mbox{\hyperlink{classCard_a8545e81ce8ecbeb8bb20c815f1ab0de0}{play}} (\mbox{\hyperlink{classPlayer}{Player}} \texorpdfstring{$\ast$}{*}player, \mbox{\hyperlink{classEnemy}{Enemy}} \texorpdfstring{$\ast$}{*}enemy)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classCard_a1f5013054990456125c82d805744062f}{name}}
+\item 
+std\+::string \mbox{\hyperlink{classCard_a30578e5f8a1e67f8ef0dbab8a81a8e3e}{type}}
+\item 
+int \mbox{\hyperlink{classCard_ad3bd1c7caf053170251da88a6f00a59e}{cost}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCard_ab85b3ea43a811beec3416fe76c4e63f4}\label{classCard_ab85b3ea43a811beec3416fe76c4e63f4} 
+\index{Card@{Card}!Card@{Card}}
+\index{Card@{Card}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{Card()}{Card()}}
+{\footnotesize\ttfamily Card\+::\+Card (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{type,  }\item[{int}]{cost }\end{DoxyParamCaption})}
+
+\Hypertarget{classCard_a4e05b0b68e43e5e76c6194458cee874f}\label{classCard_a4e05b0b68e43e5e76c6194458cee874f} 
+\index{Card@{Card}!````~Card@{\texorpdfstring{$\sim$}{\string~}Card}}
+\index{````~Card@{\texorpdfstring{$\sim$}{\string~}Card}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Card()}{\string~Card()}}
+{\footnotesize\ttfamily Card\+::\texorpdfstring{$\sim$}{\string~}\+Card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCard_ab5077b74ee9343bf616db4497c6298a1}\label{classCard_ab5077b74ee9343bf616db4497c6298a1} 
+\index{Card@{Card}!getCost@{getCost}}
+\index{getCost@{getCost}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{getCost()}{getCost()}}
+{\footnotesize\ttfamily int Card\+::get\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classCard_a906ec0559a62e3bed4ccd518cacbe34c}\label{classCard_a906ec0559a62e3bed4ccd518cacbe34c} 
+\index{Card@{Card}!getName@{getName}}
+\index{getName@{getName}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Card\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classCard_a9daf21e616f1805429ca7a41068d5eb6}\label{classCard_a9daf21e616f1805429ca7a41068d5eb6} 
+\index{Card@{Card}!getType@{getType}}
+\index{getType@{getType}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily std\+::string Card\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classCard_a8545e81ce8ecbeb8bb20c815f1ab0de0}\label{classCard_a8545e81ce8ecbeb8bb20c815f1ab0de0} 
+\index{Card@{Card}!play@{play}}
+\index{play@{play}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily virtual void Card\+::play (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} \texorpdfstring{$\ast$}{*}}]{player,  }\item[{\mbox{\hyperlink{classEnemy}{Enemy}} \texorpdfstring{$\ast$}{*}}]{enemy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{structDummyCard_a27c31e18e329be8f885c75436b90ee2d}{Dummy\+Card}}, \mbox{\hyperlink{classBattleCryCard_ae10d7f16c250f251281bfcb93ffbbce5}{Battle\+Cry\+Card}}, \mbox{\hyperlink{classPowerStrikeCard_a753fd17a5ebf20f8dd013eb9b02bf657}{Power\+Strike\+Card}}, \mbox{\hyperlink{classDefendCard_a025ecae5eaa4626423528d63599e1be7}{Defend\+Card}}, \mbox{\hyperlink{classHealingPotionCard_a345d6e0c94e647a16431f32f1d186adf}{Healing\+Potion\+Card}}, \mbox{\hyperlink{classArmorUpCard_a526dcab15756f63d10fe3055b6559fc4}{Armor\+Up\+Card}}, and \mbox{\hyperlink{classShieldBashCard_ac4fa666f4bd02acf4f0aba1534d5ec18}{Shield\+Bash\+Card}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classCard_ad3bd1c7caf053170251da88a6f00a59e}\label{classCard_ad3bd1c7caf053170251da88a6f00a59e} 
+\index{Card@{Card}!cost@{cost}}
+\index{cost@{cost}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{cost}{cost}}
+{\footnotesize\ttfamily int Card\+::cost\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classCard_a1f5013054990456125c82d805744062f}\label{classCard_a1f5013054990456125c82d805744062f} 
+\index{Card@{Card}!name@{name}}
+\index{name@{name}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Card\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classCard_a30578e5f8a1e67f8ef0dbab8a81a8e3e}\label{classCard_a30578e5f8a1e67f8ef0dbab8a81a8e3e} 
+\index{Card@{Card}!type@{type}}
+\index{type@{type}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily std\+::string Card\+::type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{card_8h}{card.\+h}}\item 
+src/\mbox{\hyperlink{card_8cpp}{card.\+cpp}}\end{DoxyCompactItemize}

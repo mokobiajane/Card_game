@@ -1,0 +1,181 @@
+\doxysection{Enemy Class Reference}
+\hypertarget{classEnemy}{}\label{classEnemy}\index{Enemy@{Enemy}}
+
+
+{\ttfamily \#include $<$enemy.\+h$>$}
+
+
+
+Collaboration diagram for Enemy\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEnemy_a43ce8224f04f796ba8fa1f5804c135f6}{Enemy}} (const std\+::string \&\mbox{\hyperlink{classEnemy_a62b43d24fa5a537d45bdba46a4e2559b}{name}}, int \mbox{\hyperlink{classEnemy_aedd5e7bf8ef07ee97be433c853a10d8d}{health}}, int attack)
+\item 
+\mbox{\hyperlink{classEnemy_ac0eec4755e28c02688065f9657150ac3}{\texorpdfstring{$\sim$}{\string~}\+Enemy}} ()
+\item 
+void \mbox{\hyperlink{classEnemy_af03b0e6cb01e953a0fbf866ddf6aba03}{start\+Turn}} ()
+\item 
+void \mbox{\hyperlink{classEnemy_a76a44c5a2deac432f057cde8a0a82206}{play\+AITurn}} (\mbox{\hyperlink{classPlayer}{Player}} \texorpdfstring{$\ast$}{*}player)
+\item 
+void \mbox{\hyperlink{classEnemy_aa74591033670a0144aedb390fe15a957}{receive\+Damage}} (int damage)
+\item 
+void \mbox{\hyperlink{classEnemy_ac7a8d025fab67f6c908a87472f0af3a7}{set\+Stunned}} (int turns)
+\item 
+bool \mbox{\hyperlink{classEnemy_aa6001291bc8cf8212cf351d21cc69adf}{is\+Stunned}} () const
+\item 
+std\+::string \mbox{\hyperlink{classEnemy_acc2a72d8a2af5edba5fca650abebd652}{get\+Name}} () const
+\item 
+int \mbox{\hyperlink{classEnemy_a3473f9f24e815aebb44c85943204d31c}{get\+Health}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDeck}{Deck}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEnemy_ac7e2f540932be19655b191f36488007a}{deck}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCard}{Card}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classEnemy_a279733b2a6725e172638a14817c99681}{hand}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCard}{Card}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classEnemy_a02c3d2e5c41864506d7b26d87ee303a6}{discard\+Pile}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classEnemy_ac32ab267863a07883894f603a8c3850e}{update\+Effects}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classEnemy_a62b43d24fa5a537d45bdba46a4e2559b}{name}}
+\item 
+int \mbox{\hyperlink{classEnemy_aedd5e7bf8ef07ee97be433c853a10d8d}{health}}
+\item 
+int \mbox{\hyperlink{classEnemy_a5cad1bc01d7f830a5a76217aa704ecf0}{attack\+Power}}
+\item 
+int \mbox{\hyperlink{classEnemy_a4f2c5c9fc97cb520306f7db140165e34}{stun\+Duration}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classEffect}{Effect}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classEnemy_a96bd00a0a7b84404d8f6060598f790fc}{active\+Effects}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classEnemy_a43ce8224f04f796ba8fa1f5804c135f6}\label{classEnemy_a43ce8224f04f796ba8fa1f5804c135f6} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{int}]{health,  }\item[{int}]{attack }\end{DoxyParamCaption})}
+
+\Hypertarget{classEnemy_ac0eec4755e28c02688065f9657150ac3}\label{classEnemy_ac0eec4755e28c02688065f9657150ac3} 
+\index{Enemy@{Enemy}!````~Enemy@{\texorpdfstring{$\sim$}{\string~}Enemy}}
+\index{````~Enemy@{\texorpdfstring{$\sim$}{\string~}Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Enemy()}{\string~Enemy()}}
+{\footnotesize\ttfamily Enemy\+::\texorpdfstring{$\sim$}{\string~}\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEnemy_a3473f9f24e815aebb44c85943204d31c}\label{classEnemy_a3473f9f24e815aebb44c85943204d31c} 
+\index{Enemy@{Enemy}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getHealth()}{getHealth()}}
+{\footnotesize\ttfamily int Enemy\+::get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classEnemy_acc2a72d8a2af5edba5fca650abebd652}\label{classEnemy_acc2a72d8a2af5edba5fca650abebd652} 
+\index{Enemy@{Enemy}!getName@{getName}}
+\index{getName@{getName}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Enemy\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classEnemy_aa6001291bc8cf8212cf351d21cc69adf}\label{classEnemy_aa6001291bc8cf8212cf351d21cc69adf} 
+\index{Enemy@{Enemy}!isStunned@{isStunned}}
+\index{isStunned@{isStunned}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{isStunned()}{isStunned()}}
+{\footnotesize\ttfamily bool Enemy\+::is\+Stunned (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classEnemy_a76a44c5a2deac432f057cde8a0a82206}\label{classEnemy_a76a44c5a2deac432f057cde8a0a82206} 
+\index{Enemy@{Enemy}!playAITurn@{playAITurn}}
+\index{playAITurn@{playAITurn}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{playAITurn()}{playAITurn()}}
+{\footnotesize\ttfamily void Enemy\+::play\+AITurn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} \texorpdfstring{$\ast$}{*}}]{player }\end{DoxyParamCaption})}
+
+\Hypertarget{classEnemy_aa74591033670a0144aedb390fe15a957}\label{classEnemy_aa74591033670a0144aedb390fe15a957} 
+\index{Enemy@{Enemy}!receiveDamage@{receiveDamage}}
+\index{receiveDamage@{receiveDamage}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{receiveDamage()}{receiveDamage()}}
+{\footnotesize\ttfamily void Enemy\+::receive\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})}
+
+\Hypertarget{classEnemy_ac7a8d025fab67f6c908a87472f0af3a7}\label{classEnemy_ac7a8d025fab67f6c908a87472f0af3a7} 
+\index{Enemy@{Enemy}!setStunned@{setStunned}}
+\index{setStunned@{setStunned}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setStunned()}{setStunned()}}
+{\footnotesize\ttfamily void Enemy\+::set\+Stunned (\begin{DoxyParamCaption}\item[{int}]{turns }\end{DoxyParamCaption})}
+
+\Hypertarget{classEnemy_af03b0e6cb01e953a0fbf866ddf6aba03}\label{classEnemy_af03b0e6cb01e953a0fbf866ddf6aba03} 
+\index{Enemy@{Enemy}!startTurn@{startTurn}}
+\index{startTurn@{startTurn}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{startTurn()}{startTurn()}}
+{\footnotesize\ttfamily void Enemy\+::start\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classEnemy_ac32ab267863a07883894f603a8c3850e}\label{classEnemy_ac32ab267863a07883894f603a8c3850e} 
+\index{Enemy@{Enemy}!updateEffects@{updateEffects}}
+\index{updateEffects@{updateEffects}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{updateEffects()}{updateEffects()}}
+{\footnotesize\ttfamily void Enemy\+::update\+Effects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classEnemy_a96bd00a0a7b84404d8f6060598f790fc}\label{classEnemy_a96bd00a0a7b84404d8f6060598f790fc} 
+\index{Enemy@{Enemy}!activeEffects@{activeEffects}}
+\index{activeEffects@{activeEffects}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{activeEffects}{activeEffects}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classEffect}{Effect}}\texorpdfstring{$\ast$}{*}$>$ Enemy\+::active\+Effects\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classEnemy_a5cad1bc01d7f830a5a76217aa704ecf0}\label{classEnemy_a5cad1bc01d7f830a5a76217aa704ecf0} 
+\index{Enemy@{Enemy}!attackPower@{attackPower}}
+\index{attackPower@{attackPower}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{attackPower}{attackPower}}
+{\footnotesize\ttfamily int Enemy\+::attack\+Power\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classEnemy_ac7e2f540932be19655b191f36488007a}\label{classEnemy_ac7e2f540932be19655b191f36488007a} 
+\index{Enemy@{Enemy}!deck@{deck}}
+\index{deck@{deck}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{deck}{deck}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDeck}{Deck}}\texorpdfstring{$\ast$}{*} Enemy\+::deck}
+
+\Hypertarget{classEnemy_a02c3d2e5c41864506d7b26d87ee303a6}\label{classEnemy_a02c3d2e5c41864506d7b26d87ee303a6} 
+\index{Enemy@{Enemy}!discardPile@{discardPile}}
+\index{discardPile@{discardPile}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{discardPile}{discardPile}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCard}{Card}}\texorpdfstring{$\ast$}{*}$>$ Enemy\+::discard\+Pile}
+
+\Hypertarget{classEnemy_a279733b2a6725e172638a14817c99681}\label{classEnemy_a279733b2a6725e172638a14817c99681} 
+\index{Enemy@{Enemy}!hand@{hand}}
+\index{hand@{hand}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{hand}{hand}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCard}{Card}}\texorpdfstring{$\ast$}{*}$>$ Enemy\+::hand}
+
+\Hypertarget{classEnemy_aedd5e7bf8ef07ee97be433c853a10d8d}\label{classEnemy_aedd5e7bf8ef07ee97be433c853a10d8d} 
+\index{Enemy@{Enemy}!health@{health}}
+\index{health@{health}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily int Enemy\+::health\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classEnemy_a62b43d24fa5a537d45bdba46a4e2559b}\label{classEnemy_a62b43d24fa5a537d45bdba46a4e2559b} 
+\index{Enemy@{Enemy}!name@{name}}
+\index{name@{name}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Enemy\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classEnemy_a4f2c5c9fc97cb520306f7db140165e34}\label{classEnemy_a4f2c5c9fc97cb520306f7db140165e34} 
+\index{Enemy@{Enemy}!stunDuration@{stunDuration}}
+\index{stunDuration@{stunDuration}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{stunDuration}{stunDuration}}
+{\footnotesize\ttfamily int Enemy\+::stun\+Duration\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{enemy_8h}{enemy.\+h}}\item 
+src/\mbox{\hyperlink{enemy_8cpp}{enemy.\+cpp}}\end{DoxyCompactItemize}

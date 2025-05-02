@@ -1,0 +1,30 @@
+/**
+ * @mainpage Cardgame Project
+ *
+ * @section intro_sec Introduction
+ *
+ * Welcome to the Cardgame Project, a turn-based, console-based card battle game written in C++.
+ * Players draw and play cards such as Strike, Armor Up, and Health Potion to defeat their opponent.
+ *
+ * @section gameplay_sec Gameplay Overview
+ *
+ * - Each player starts with a set amount of health.
+ * - Players draw cards from a deck each turn.
+ * - Cards have effects:
+ *   - Strike deals damage to an opponent.
+ *   - Armor Up increases the player’s armor.
+ *   - Health Potion restores lost health.
+ * - Armor reduces incoming damage.
+ * - The game ends when one player's health reaches zero.
+ *
+ * @section uml_sec UML Diagram
+ *
+ * The following diagram shows the high-level class and component structure of the game:
+ *
+ * <img src="componentdiagramnew-1.png" width="600" alt="Component UML Diagram">
+ * <img src="classdiagram-1.png" width="600" alt="Class UML Diagram">
+ *
+ * @section author_sec Author
+ *
+ * Project created by JANE MOKOBIA.
+ */

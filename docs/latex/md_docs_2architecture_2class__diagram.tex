@@ -1,0 +1,36 @@
+\chapter{Core Classes in the Card RPG Game\+:}
+\hypertarget{md_docs_2architecture_2class__diagram}{}\label{md_docs_2architecture_2class__diagram}\index{Core Classes in the Card RPG Game:@{Core Classes in the Card RPG Game:}}
+\label{md_docs_2architecture_2class__diagram_autotoc_md1}%
+\Hypertarget{md_docs_2architecture_2class__diagram_autotoc_md1}%
+
+\begin{DoxyEnumerate}
+\item Game\+: Manages the overall flow of the game, including starting, ending, saving, and loading game states. It coordinates interactions between players, enemies, turns, and the board.
+\item \doxylink{classPlayer}{Player}\+: Represents the player\textquotesingle{}s character, tracking health, mana, experience, level, hand (cards in play), deck, skills, quests, and achievements. Players can draw and play cards, gain XP, complete quests, and use skills.
+\item \doxylink{classEnemy}{Enemy}\+: Represents enemies, including their health, attack abilities, and status effects. They can attack the player or use special abilities based on AI behavior.
+\item \doxylink{classDeck}{Deck}\+: A collection of cards that belong to either the player or the enemy. It provides functionality to shuffle and draw cards.
+\item \doxylink{classCard}{Card}\+: Represents individual cards with attributes like name, type, effect, and cost. Subclasses include specific card types like {\itshape \doxylink{classSpell}{Spell}}, {\itshape Item}, and {\itshape \doxylink{classEquipment}{Equipment}}.
+\item Turn\+: Manages the sequence of actions taken by players and enemies. It oversees the execution of turns and transitions between them.
+\item \doxylink{classBoard}{Board}\+: The game environment where players and enemies interact. It tracks their placement and manages updates to the battlefield.(
+\item \doxylink{classMana}{Mana}\+: Tracks and manages the player\textquotesingle{}s mana for casting cards and abilities.
+\item \doxylink{classLevel}{Level}\+: Tracks the player\textquotesingle{}s progression, managing level-\/ups and their associated benefits.
+\item \doxylink{classAchievement}{Achievement}\+: represents milestones or specific accomplishments that players can unlock during the game.
+\item \doxylink{classEffect}{Effect}\+: Manages status effects, such as buffs or debuffs, applied to players or enemies.
+\item \doxylink{classQuest}{Quest}\+: Represents quests available to the player, tracking progress and rewards upon completion.
+\item \doxylink{classSkill}{Skill}\+: Represents player abilities, with attributes like skill level, effects, and activation requirements.
+\item Item\+: general representation of cocnsumable or single-\/use cards that provide an effect when played e.\+g healing
+\item \doxylink{classEquipment}{Equipment}\+: Represents gear or items that provide persistent effects or stat bonuses when equipped by the player
+\item \doxylink{classSpell}{Spell}\+: Represents magic-\/based cards used to attack, heal, buff,debuff or apply other effects.
+\item \doxylink{classHealthPotion}{Health\+Potion} is a specific type of consumable item card(subclass od Item) used to restore a player\textquotesingle{}s health.
+\end{DoxyEnumerate}\hypertarget{md_docs_2architecture_2class__diagram_autotoc_md2}{}\doxysection{\texorpdfstring{18. Battle\+: Handles the combat encounters between the player and enemy.}{18. Battle: Handles the combat encounters between the player and enemy.}}\label{md_docs_2architecture_2class__diagram_autotoc_md2}
+\hypertarget{md_docs_2architecture_2class__diagram_autotoc_md3}{}\doxysubsection{\texorpdfstring{Relationships\+:}{Relationships:}}\label{md_docs_2architecture_2class__diagram_autotoc_md3}
+
+\begin{DoxyItemize}
+\item Game interacts with almost all other classes to manage the gameplay flow.
+\item \doxylink{classPlayer}{Player} interacts closely with the \doxylink{classDeck}{Deck}, \doxylink{classCard}{Card}, \doxylink{classSkill}{Skill}, \doxylink{classQuest}{Quest}, \doxylink{classMana}{Mana}, \doxylink{classLevel}{Level}, and Experience classes for its attributes and actions.
+\item \doxylink{classEnemy}{Enemy} interacts with the \doxylink{classBoard}{Board}, \doxylink{classEffect}{Effect}, and \doxylink{classPlayer}{Player} classes during combat.
+\item Turn bridges actions between the \doxylink{classPlayer}{Player} and \doxylink{classEnemy}{Enemy} during each round.
+\item \doxylink{classEffect}{Effect} works with both \doxylink{classPlayer}{Player} and \doxylink{classEnemy}{Enemy} to apply status effects.
+\item Cards have different kinds such as \+: \doxylink{classEquipment}{Equipment},item,spell
+\end{DoxyItemize}
+
+This setup creates a modular and dynamic system for gameplay, allowing each class to play a distinct role while collaborating with others. 

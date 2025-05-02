@@ -1,0 +1,31 @@
+\doxysection{board.\+h}
+\hypertarget{board_8h_source}{}\label{board_8h_source}\index{include/board.h@{include/board.h}}
+\mbox{\hyperlink{board_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ BOARD\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ BOARD\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Player_8h}{Player.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{enemy_8h}{enemy.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBoard}{Board}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}{Board}}();}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{classBoard_af73f45730119a1fd8f6670f53f959e68}{\string~Board}}();}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBoard_a25ddc8874be8422bb48fa66d14e32b04}{addPlayer}}(\mbox{\hyperlink{classPlayer}{Player}}*\ player);}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBoard_a3d618d7c957fd651fa8784acfe12d985}{addEnemy}}(\mbox{\hyperlink{classEnemy}{Enemy}}*\ enemy);}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBoard_aa1e9675f86e4e5b9436ef15e57536d1e}{updateBoard}}();}
+\DoxyCodeLine{00017\ \ \ \ \ std::vector<Player*>\&\ \mbox{\hyperlink{classBoard_a7c71d41ef5dcac3f50378d2cdb41bc38}{getPlayers}}();}
+\DoxyCodeLine{00018\ \ \ \ \ std::vector<Enemy*>\&\ \mbox{\hyperlink{classBoard_ab829869d6365f5f2d3615e3b2221963a}{getEnemies}}();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ std::vector<Player*>\ \mbox{\hyperlink{classBoard_a621ff0b92f97301a60a76386b466bd45}{players}};}
+\DoxyCodeLine{00022\ \ \ \ \ std::vector<Enemy*>\ \mbox{\hyperlink{classBoard_a645647404430e97410d816409c8ec55c}{enemies}};}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,69 @@
+\chapter{Description of Components}
+\hypertarget{md_docs_2architecture_2component__diagram}{}\label{md_docs_2architecture_2component__diagram}\index{Description of Components@{Description of Components}}
+\label{md_docs_2architecture_2component__diagram_autotoc_md4}%
+\Hypertarget{md_docs_2architecture_2component__diagram_autotoc_md4}%
+
+\begin{DoxyEnumerate}
+\item Game Engine
+\begin{DoxyItemize}
+\item Responsibilities\+: Manages the overall game flow, including initialization, starting, and ending the game.
+\item Interfaces\+:
+\begin{DoxyItemize}
+\item initialize()\+: Sets up the initial game state and resources.
+\item start\+Game()\+: Begins the game loop and handles main game events.
+\item end\+Game()\+: Cleans up resources and ends the game session.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Game Logic
+\begin{DoxyItemize}
+\item Responsibilities\+: Handles core gameplay mechanics, including turn execution and state updates.
+\item Interfaces\+:
+\begin{DoxyItemize}
+\item execute\+Turn()\+: Processes the actions of players and enemies during a turn.
+\item update\+State()\+: Updates the game state based on the outcomes of actions and events.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Rendering Engine
+\begin{DoxyItemize}
+\item Responsibilities\+: Manages graphical rendering of game elements, such as the game board, cards, and characters (for internal testing and debugging).
+\item Interfaces\+:
+\begin{DoxyItemize}
+\item draw\+Board()\+: Renders the game board with all entities and objects.
+\item render\+Card()\+: Draws individual cards for testing purposes.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Entities
+\begin{DoxyItemize}
+\item Responsibilities\+: Represents the different game entities, including players, enemies, cards, decks, and equipment.
+\item Interfaces\+:
+\begin{DoxyItemize}
+\item \doxylink{classPlayer}{Player}\+: Manages player attributes, actions, and interactions.
+\item \doxylink{classEnemy}{Enemy}\+: Manages enemy attributes and behaviors.
+\item \doxylink{classCard}{Card}\+: Represents individual cards with effects and costs.
+\item \doxylink{classDeck}{Deck}\+: Manages collections of cards for players and enemies.
+\item \doxylink{classEquipment}{Equipment}\+: Manages equipment items and their effects on players.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item AI Engine
+\begin{DoxyItemize}
+\item Responsibilities\+: Implements artificial intelligence for enemy behavior and decision-\/making.
+\item Interfaces\+:
+\begin{DoxyItemize}
+\item enemy\+Move()\+: Determines the actions and movements of enemies.
+\item calculate\+Actions()\+: Calculates the optimal actions for enemies based on the game state.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item \doxylink{classDeck}{Deck}
+\begin{DoxyItemize}
+\item This is the set of cards on the board which the player selects from to form a deck of card for game play.
+\end{DoxyItemize}
+\item \doxylink{classPlayer}{Player}
+\begin{DoxyItemize}
+\item The real player takes attributes like playing a card, attack the enemy, gain achievements. it is connected to the cards, deck e.\+t.\+c.
+\end{DoxyItemize}
+\item Cards
+\begin{DoxyItemize}
+\item This is the signle card a player/ enemy picks, which has different actions and effects on the characters in play. ~\newline
+ 
+\end{DoxyItemize}
+\end{DoxyEnumerate}
